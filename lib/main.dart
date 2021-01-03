@@ -15,6 +15,14 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: Container());
+        home: Scaffold(
+          appBar: AppBar(title: const Text('Flutter Arch Template')),
+          body: const Center(
+              child: Padding(
+            padding: EdgeInsets.all(36.0),
+            child: Text(
+                'A template app for basic flutter architecture using: \nMVVM style \nProvider package for state management \nClean architecture structure'),
+          )),
+        ));
   }
 }
